@@ -49,6 +49,8 @@ function giveAnswer() {
 
 
 
+
+
 //  document.querySelector('button').addEventListener('click', getQuestion);
 
 // function getQuestion() {
@@ -87,3 +89,29 @@ function giveAnswer() {
 //      const correctAnswer = document.querySelector('.buttonAnswer').getAttribute('data-correct-answer');
 //      document.querySelector('p').innerText = correctAnswer;
 // }
+
+
+
+//Delete BELOW
+
+function getMiddle(s) {
+    middleIndex = Math.floor(s.length / 2);  // Implicit global variable
+
+    if (s.length % 2 !== 0) {
+        // Odd length: return the middle character
+        return s[middleIndex];
+    } else {
+        // Even length: return the middle two characters
+        return s.slice(middleIndex - 1, middleIndex + 1);
+    }
+}
+
+function getMiddle(s){
+    let middleIndex = Math.ceil(s.length / 2 - 1)
+
+    if (s.length % 2 === 0){
+        return middleIndex + middleIndex + 1;
+    }else{
+        return middleIndexl
+    }
+};
